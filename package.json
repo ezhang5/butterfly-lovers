@@ -1,0 +1,13 @@
+{
+  "name": "butterfly",
+  "version": "1.0.0",
+  "description": "My first multi-user virtual reality",
+  "scripts": {
+    "start": "node ./server/index.js"
+  },
+  "author": "Eugenia Zhang",
+  "dependencies": {
+    "howler": "^2.2.1",
+    "networked-aframe": "^0.7.0"
+  }
+}
