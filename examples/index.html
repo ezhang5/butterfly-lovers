@@ -85,19 +85,36 @@
           </a-entity>
           <a-entity cursor="rayOrigin: mouse"></a-entity>
         </a-entity>
-    </a-entity>
-
-      <a-cylinder position="0 0.4 -6.5" height="0.5" radius="3" color="#BBBBBB"></a-cylinder>
-
-      <a-box position="0 1 -2" height="0.3" depth="0.1" width="0.7" sound="src: #audiobackground; loop: true; positional: false; on: click">
-        <a-text position="0 0 0.05"value="Press Here to \nPlay Music" width="2" align="center" color="black"></a-text>
-      </a-box>
-
-      <a-entity scale="0.3 0.3 0.3" position="0 0.9 -6" animation="property: rotation; easing: linear; to: 0 360 0; loop: true; dur: 10000">
-        <a-gltf-model id="pinkbutterfly" position="-6 0 0" rotation="0 -90 0" src="image/butterflyPINK.gltf"></a-gltf-model>
-        <a-gltf-model id="bluebutterfly" position="6 0 0" rotation="0 90 0" src="image/butterflyBLUE.gltf"></a-gltf-model>
       </a-entity>
-  
+
+      <!--DISPLAY-->
+      <a-entity position="0 0.4 -8">
+        <!--CYLINDER-->
+        <a-cylinder position="0 0.4 -6.5" height="0.5" radius="3" color="#BBBBBB"></a-cylinder>
+
+        <!--BUTTERFLIES-->
+        <a-entity scale="0.3 0.3 0.3" position="0 0.9 -6" animation="property: rotation; easing: linear; to: 0 360 0; loop: true; dur: 10000">
+          <a-gltf-model id="pinkbutterfly" position="-6 0 0" rotation="0 -90 0" src="image/butterflyPINK.gltf"></a-gltf-model>
+          <a-gltf-model id="bluebutterfly" position="6 0 0" rotation="0 90 0" src="image/butterflyBLUE.gltf"></a-gltf-model>
+        </a-entity>
+      </a-entity>
+
+      <!--WELCOME SIGN-->
+      <a-image id="welcome" src="image/welcome.png" position="0 2 -2" width="4.8" height="3">
+        <!--PLAY BUTTON-->
+        <a-box position="1.6 -0.97 0" height="0.3" depth="0.05" color="#313131" width="1" sound="src: #audiobackground; loop: true; positional: false; on: click">
+          <a-text position="0 0 0.05"value="PLAY" width="4" align="center" color="#D1D1D1"></a-text>
+        </a-box>
+      </a-image>
+
+      <!--EXPLANATION SIGN-->
+      <a-image id="welcome" src="image/explanation.png" position="-5 2.5 -18.5" rotation="0 45 0" width="4.8" height="3">
+      </a-image>
+
+      <!--CREATION SIGN-->
+      <a-image id="welcome" src="image/creation.png" position="5 2.5 -18.5" rotation="0 -45 0" width="4.8" height="3">
+      </a-image>
+
     </a-scene>
 
     <script>
