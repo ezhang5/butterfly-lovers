@@ -1,1 +1,2 @@
-# AMST116 Final Project - an audiotorial and visual experience of a metaphor of the Asian American experience.
+# AMST116 Final Project
+An audiotorial and visual experience of a metaphor of the Asian American experience.
